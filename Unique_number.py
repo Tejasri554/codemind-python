@@ -1,11 +1,9 @@
-s=input()
-n=''
-c=0
-for i in s:
-    if i not in n:
-        c+=1
-        n=n+i
-if c==len(s):
+n=input()
+s=''
+for i in n:
+    if i not in s:
+        s+=i
+if len(s)==len(n):
     print("Unique Number")
 else:
     print("Not Unique Number")
