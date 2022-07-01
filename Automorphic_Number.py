@@ -1,18 +1,15 @@
 n=int(input())
+s=n*n
 l=len(str(n))
-s=0
-p=n*n
+a=0
 for i in range(1,l+1):
-    r=p%10
-    s=s*10+r
-    p=p//10
-l1=len(str(s))
-t=0
-for j in range (1,l1+1):
-    q=s%10
-    t=t*10+q
+    r=s%10
+    a=a*10+r
     s=s//10
-if n==t:
+a=str(a)
+a=a[::-1]
+a=int(a)
+if n==a:
     print("Automorphic Number")
-else:    
+else:
     print("Not an Automorphic Number")
