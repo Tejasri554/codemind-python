@@ -3,10 +3,8 @@ a=0
 b=1
 print(a,end=' ')
 print(b,end=' ')
-i=1
-while i<=n-2:
+for i in range(n-2):
     c=a+b
+    print(c,end=' ')
     a=b
     b=c
-    print(c,end=' ')
-    i+=1
