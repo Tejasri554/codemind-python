@@ -1,12 +1,13 @@
 n=int(input())
-l=len(str(n))
+a=n
+i=len(str(n))
 s=0
-t=n
-for i in range(1,l+1):
+while n:
     r=n%10
-    s=s+r**(l-i+1)
+    s=s+r**i
+    i-=1
     n=n//10
-if s==t:
+if s==a:
     print(True)
 else:
     print(False)
