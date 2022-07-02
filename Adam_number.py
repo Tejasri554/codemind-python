@@ -1,21 +1,17 @@
 n=int(input())
-t=n
-p=n*n
-s=0
+p1=n*n
 l=len(str(n))
+s=0
 for i in range(1,l+1):
-    r=n%10
-    s=s*10+r
+    s=s*10+n%10
     n=n//10
-p1=s*s
-t1=p1
-l1=len(str(p1))
-s1=0
+r=s*s
+l1=len(str(r))
+m=0
 for j in range(1,l1+1):
-    r1=p1%10
-    s1=s1*10+r1
-    p1=p1//10
-if p==s1:
+    m=m*10+r%10
+    r=r//10
+if m==p1:
     print(True)
 else:
     print(False)
